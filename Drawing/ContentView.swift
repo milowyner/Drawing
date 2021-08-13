@@ -20,7 +20,7 @@ struct ContentView: View {
 
             Spirograph(innerRadius: Int(innerRadius), outerRadius: Int(outerRadius), distance: Int(distance), amount: amount)
                 .stroke(Color(hue: hue, saturation: 1, brightness: 1), lineWidth: 1)
-                .frame(width: 300, height: 300)
+                .frame(width: 400, height: 400)
 
             Spacer()
 
@@ -44,6 +44,13 @@ struct ContentView: View {
                 Text("Color")
                 Slider(value: $hue)
                     .padding(.horizontal)
+            }
+            
+            Button("Animate") {
+                amount = 0.0
+                withAnimation(.linear(duration: 5)) {
+                    amount = 1.0
+                }
             }
         }
     }

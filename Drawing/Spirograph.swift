@@ -11,7 +11,12 @@ struct Spirograph: Shape {
     let innerRadius: Int
     let outerRadius: Int
     let distance: Int
-    let amount: CGFloat
+    var amount: CGFloat
+    
+    var animatableData: CGFloat {
+        get { amount }
+        set { amount = newValue }
+    }
     
     func gcd(_ a: Int, _ b: Int) -> Int {
         var a = a
