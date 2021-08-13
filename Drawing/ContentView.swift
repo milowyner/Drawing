@@ -8,36 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var amount: CGFloat = 0.0
+    @State private var insetAmount: CGFloat = 0
 
     var body: some View {
-        VStack {
-            ZStack {
-                Circle()
-                    .fill(Color.red)
-                    .frame(width: 200 * amount)
-                    .offset(x: -50, y: -80)
-                    .blendMode(.screen)
-
-                Circle()
-                    .fill(Color.green)
-                    .frame(width: 200 * amount)
-                    .offset(x: 50, y: -80)
-                    .blendMode(.screen)
-
-                Circle()
-                    .fill(Color.blue)
-                    .frame(width: 200 * amount)
-                    .blendMode(.screen)
+        Trapezoid(insetAmount: insetAmount)
+            .frame(width: 200, height: 100)
+            .onTapGesture {
+                withAnimation {
+                    insetAmount = insetAmount == 100 ? 0 : 100
+                }
             }
-            .frame(width: 300, height: 300)
-
-            Slider(value: $amount)
-                .padding()
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
