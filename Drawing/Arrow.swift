@@ -12,6 +12,11 @@ struct Arrow: Shape {
     var headHeight: CGFloat = 40
     var lineWidth: CGFloat = 6
     
+    var animatableData: CGFloat {
+        get { lineWidth }
+        set { lineWidth = newValue }
+    }
+    
     func path(in rect: CGRect) -> Path {
         var path = Path()
         

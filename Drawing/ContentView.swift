@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var lineWidth: CGFloat = 2
+    
     var body: some View {
-        Arrow()
+        Arrow(lineWidth: lineWidth)
             .frame(width: 200, height: 200)
+            .onTapGesture {
+                withAnimation {
+                    lineWidth = (lineWidth == 2) ? 8 : 2
+                }
+            }
     }
 }
 
