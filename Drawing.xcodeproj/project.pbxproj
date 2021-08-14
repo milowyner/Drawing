@@ -13,7 +13,7 @@
 		05927FBE26C5B1C2005F63A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05927FBD26C5B1C2005F63A8 /* Assets.xcassets */; };
 		05927FC126C5B1C2005F63A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05927FC026C5B1C2005F63A8 /* Preview Assets.xcassets */; };
 		05927FC426C5B1C2005F63A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05927FC226C5B1C2005F63A8 /* LaunchScreen.storyboard */; };
-		05A5D57F26C74FD900B9F720 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5D57E26C74FD900B9F720 /* Arrow.swift */; };
+		05A5D58126C754A000B9F720 /* ColorCyclingRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5D58026C754A000B9F720 /* ColorCyclingRectangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		05927FC026C5B1C2005F63A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05927FC326C5B1C2005F63A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05927FC526C5B1C2005F63A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05A5D57E26C74FD900B9F720 /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		05A5D58026C754A000B9F720 /* ColorCyclingRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingRectangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				05927FB726C5B1C0005F63A8 /* AppDelegate.swift */,
 				05927FB926C5B1C0005F63A8 /* SceneDelegate.swift */,
 				05927FBB26C5B1C0005F63A8 /* ContentView.swift */,
-				05A5D57E26C74FD900B9F720 /* Arrow.swift */,
+				05A5D58026C754A000B9F720 /* ColorCyclingRectangle.swift */,
 				05927FBD26C5B1C2005F63A8 /* Assets.xcassets */,
 				05927FC226C5B1C2005F63A8 /* LaunchScreen.storyboard */,
 				05927FC526C5B1C2005F63A8 /* Info.plist */,
@@ -149,9 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				05927FB826C5B1C0005F63A8 /* AppDelegate.swift in Sources */,
-				05A5D57F26C74FD900B9F720 /* Arrow.swift in Sources */,
 				05927FBA26C5B1C0005F63A8 /* SceneDelegate.swift in Sources */,
 				05927FBC26C5B1C0005F63A8 /* ContentView.swift in Sources */,
+				05A5D58126C754A000B9F720 /* ColorCyclingRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

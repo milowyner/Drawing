@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var lineWidth: CGFloat = 2
+    @State var colorCycle: Double = 0
     
     var body: some View {
-        Arrow(lineWidth: lineWidth)
-            .frame(width: 200, height: 200)
-            .onTapGesture {
-                withAnimation {
-                    lineWidth = (lineWidth == 2) ? 8 : 2
-                }
-            }
+        VStack {
+            ColorCyclingRectangle(amount: colorCycle, gradientPosition: (start: .topLeading, end: .bottomTrailing))
+                .frame(width: 300, height: 300)
+            
+            Slider(value: $colorCycle)
+        }
     }
 }
 
